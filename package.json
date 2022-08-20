@@ -1,0 +1,29 @@
+{
+  "name": "cj-hugo-site",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm run clear-public",
+    "build": "hugo",
+    "clear-public": "rimraf ./public",
+    "start": "hugo server",
+    "start:dev": "hugo server -D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dually8/cj-coffey.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "dually8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dually8/cj-coffey/issues"
+  },
+  "homepage": "https://github.com/dually8/cj-coffey#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
