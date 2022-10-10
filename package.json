@@ -25,5 +25,8 @@
   "homepage": "https://github.com/dually8/cj-coffey#readme",
   "dependencies": {
     "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "firebase-tools": "^11.14.1"
   }
 }
