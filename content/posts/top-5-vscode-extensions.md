@@ -1,7 +1,7 @@
 ---
 title: "Top 5 Visual Studio Code Extensions"
-date: 2022-10-10
-draft: true
+date: 2022-10-11
+draft: false
 tags: ["vscode", "extensions", "favorites"]
 ---
 
@@ -18,7 +18,7 @@ Anyways, here's a list of my favorite VSCode extensions.
 4. [Document This](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis)
    - I have a secret. I'm a developer that likes documentation. This extension helps me document my functions and such quickly and easily. No maintenance programmer ever complained about too much documentation, and we love our maintenance programmers. 🙏 You all are doing the lord's work.
 5. [Indent rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-   - Tabs or spaces? Just kidding, I don't want to start WW3 here. However, whether you use one, the other, or both, this extension lets you see how far down the rabbit hole you've gone at a glance. It's especially handy when you're 3000+ lines and 4 nested objects deep in a JSON file.
+   - Tabs or spaces? Just kidding, I don't want to start World War 3 here. However, whether you use one, the other, or both, this extension lets you see how far down the rabbit hole you've gone at a glance. It's especially handy when you're 3000+ lines and 4 nested objects deep in a JSON file.
 
 ## Honorable mentions
 
