@@ -34,3 +34,5 @@ Here's a few that I use, but if I was on a stranded dev box without these, I cou
   - This is a nice side bar in VSCode that shows you all of your TODOs, and hopes and dreams you left behind in your codebase. Don't neglect them!
 - [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
   - I was chasing a good theme for a long time. Sometime in the mid 2010s I found my soulmate in the Dracula theme. My terminal, VSCode, JetBrains IDEs, and tons more are using this theme. It's widely available and, [thanks to the site](https://draculatheme.com/), very easy to use in more than just your code editor.
+
+What are some of your favorite VSCode extensions? Let me know in the comments below. Thanks for reading!
