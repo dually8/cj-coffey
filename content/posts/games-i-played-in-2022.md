@@ -28,6 +28,10 @@ draft: true
 22. Skul: The Hero Slayer
 23. MultiVerses
 24. House Flipper
+25. Pokemon Scarlet
+26. Castlevania: Aria of Sorrow
+27. Final Fantasy XV
+28. Warhammer 40,000: Darktide
 
 
 What were some of the games you played this year? Let me know in the comments below! Thanks for reading!
