@@ -1,37 +1,65 @@
 ---
 title: "Games I Played in 2022"
-date: 2022-12-15
-draft: true
+date: 2022-12-29
+draft: false
 ---
 
+Here we are. The end of another year. Unfortunately, I've been sick for most of the past 2 months, so I haven't had a chance to get far enough ahead in my side projects to warrant another Dev Log. However, I did want to take a chance and talk about some video games. So, here's my year in gaming, in no particular order. This isn't an exhaustive list, but these are most of the games I've played.
+
 1. Persona 5 Royal (AGAIN)
+    - What can I say? This is my favorite game of all time. I feel like I have to play through it once per year. I haven't beat it a third time yet, but I'm about quarter of the way there as of the time of writing this. If you think you can spare a couple of months to play through this 100 hour journey, it'll be well worth it. I cannot recommend this game enough.
 2. Soul Hackers 2
+    - I haven't gotten around to finishing this game yet, but I've been enjoying it quite a bit. The story is good enough to keep me interested and the characters (for the most part) are written well enough to make me care about them, especially the protagonist. I'm really glad that the protagonist isn't silent and has a personality here. Not that there's anything wrong with a silent protagonist, but I feel like it wouldn't suit this game. Ringo is too cheeky and fun to keep silent.
 3. Final Fantasy VIII
+    - I finally got around to beating this game that I had delayed beating since 1999. This game holds a very special place in my heart as its atmosphere and music gave me great comfort during some perilous times growing up. I'm a sucker for love stories, and this one does it so well.
 4. Phasmophobia
+    - I've been playing this game since it released in 2020. It's gotten so much better, and I've been so thrilled to be able to play it in VR this year (as I was gifted a VR headset the previous holiday season). It's one of my favorite multiplayer experiences out there. It's spooky enough to be thrilling, but not enough to be frightening and give you nightmares and such. There's enough jank in the game to make it unintentionally funny, which helps in that regard. 10/10, please play this.
 5. Midnight Ghost Hunt
+    - I was one of the lucky few that got an early alpha key to help test this game. Even then, it was incredibly good at its base. It just needed the time to get polished into what it is now. It's an incredibly fun multiplayer experience. It's ghostbusters meets prop hunt and it is an incredibly fun experience.
 6. Turbo Golf Racing
+    - I haven't play this game too much, but suffice to say, this is basically if Rocket League was car golf instead of soccer. It's a good time, for sure. I think given enough time, this game will become really solid as the base is already there for an enjoyable experience.
 7. Guilty Gear Strive
+    - When I first picked up this game, I wasn't all that into it. I think I just wasn't paying enough attention to the soundtrack, because, as someone in a youtube comment once wrote, "This is a $60 soundtrack that comes with a game." And I couldn't agree more. My spotify wrapped had [_Find Your One Way_](https://music.youtube.com/watch?v=eC15R4HeqZc&list=OLAK5uy_nN4Fx0aAZ_Sfr5qGnIwzIcvk2P5a0OT24) as number #1 this year. I came back to the game after listening to the music some more, and I'm glad I did. I think it's hard to start any new fighting game, especially when there are so many characters to pick from and you don't know where to start. I should have just started with Sol Badguy from the beginning. Best track on the soundtrack, and best rush down character to play in the whole game. I can't get enough of it. And when they introduced Bridget, I fell in love with the game again. I hate playing zoners in fighting games, but she just feels so fresh and easy to play, it was a blast. Even if you don't play this game, at least give the soundtrack a listen. You won't regret it.
 8. DNF Duel
-9. Monster Hunter Rise: Sunbreak
+    - I was lucky enough to play the open beta for this earlier this year, and, while I hated that I couldn't get a good feel for it, I felt like I would like it. I'm glad I didn't hesistate to pick it up once it released. This is a terrific fighting game, especially for beginners. I would say it's combo focused, but those combos are more so about figuring out which of your characters moves chain into one another, instead of that _plus_ mastering the execution of the moves. All of the moves in this game are performed by a simple button press and a direction (like Smash Bros), so you don't have to worry about crazy directional inputs (I'm looking at you, King of Fighters).
+9.  Monster Hunter Rise: Sunbreak
+    -  I played a ton of the base game last year. Early this year, the Sunbreak expansion launched. It has been a really enjoyable experience. I probably sunk around 40 hours or so in the expansion alone with some monster hunting buddies. This is the best game in the series, in my opinion. There's a ton of fun to be had here, and the movement options give you so much more freedom than ever before. Also, Monster Hunter has dogs now. What's not to love?
 10. Persona 4 Arena Ultimax
+    -  Okay, I've been on a fighting game kick this year (as well as a JRPG one). Sue me. This is another Arc System Works fighting game. They never miss, _plus_ you get to play as Chie. I couldn't pass it up.
 11. V Rising
+    -  I'm not big on survival games, but I did enjoy my time with this one. It's got some neat mechanics behind it. I haven't played it since around June/July this year, so perhaps there's more to love about this game now, but I think it has a little bit of a ways to go before this one is solid. I think its base is there, but I'd like to see some more content, specifically around combat before I pick this up again.
 12. Teenage Mutant Ninja Turtles: Shredder's Revenge
+    -  This may be my game of the year this year. You know what? It is. Congrats Tribute Games/Dotemu! You win! This game hit all of the marks for me. 10/10 Soundtrack (bless you Tee Lopes). 10/10 Gameplay. 10/10 Multiplayer experience. 10/10 Nostalgia. I bought the original soundtrack (OST) on bandcamp I loved it so much. I played through this several times with different groups of friends and even with my wife. We all had a blast leveling up characters and unlocking new ones along the way. Beat-em-ups are my favorite genre of braindead gaming. This one is at the top of the list of my go-to games when I just want to button mash and turn my brain off for a couple of hours. 10/10 game. Cannot recommend this enough.
 13. Persona 4 Golden
+    -  This may be blasphemy to some, but this is my least favorite Persona game that I've played (out of 3 FES, 4 Golden, 5, 5 Royal). No game should need 20 hours to build up into a good game, but that's what this one does. There's _a lot_ of tutorial to get through before you get to the meat and potatoes of this game. **_BUT_**, once you get there, wooooo boyyyyy it's good. Just because this is my least favorite Persona game doesn't mean this is a bad game by any means. It's a terrific game with fantastic writing and memorable characters. It gives you this feeling of nostalgia even if you've never played it before. The time in high school feels more personal to me here than any of the other Persona games because it takes place in a small town similar to the one I grew up in. The relationships are more intimate here than a lot of the other relationships in the other Persona games I played. I just hate that it takes so long to get to Kanji, because he absolutely carries this game. Please, if you plan on playing this game, give it some time to set in, because it gets good. I promise. Though, I do hate that it takes forever getting there.
 14. Pavlov VR
+    -  I had, probably, way too much fun playing this game. I liken this game to Minecraft in the sense that we've been given a sandbox, now it's up to the community to build the _really_ amazing stuff. I played through Super Mario 64 with a friend in this game. There were zombies (for some reason), King Bob-ombs, and baby penguins. It was ridiculous. This is _the_ VR game to get if you pick up a VR headset.
 15. Synth Riders
+    -  VR games generally fall into one of two categories: music game, or shooting game. The medium works so well for those things. This one falls into the former category. Synth Riders has a great soundtrack for you retrowave/synthwave fans out there (see also: me). It's the only VR game that has caused me to sweat, so there's also that. Games like this really give you an unintentional work out. If you're picking up a VR music game, pick up this one or the next one on this list.
 16. Beat Saber
-17. Walkabout Mini Golf
-18. Code Vein
+    -  Another VR music game. Possibly the OG? I don't know for certain and I'm too lazy to look it up, but it certainly feels like this was the VR music/rhythm game that everyone was talking about at one point. You can't go wrong picking this one up.
+17. Audica
+    - What happens when you combine the two VR game categories? You get Audica! In Audica, you shoot the targets in rhythm with the song. I found this one to be more difficult than Synth Riders and Beat Saber, but it was still enjoyable.
+18. Walkabout Mini Golf
+    - This falls outside of the typical VR game category, but this might be my favorite VR experience (at least, outside of Pavlov...I guess it depends on the day/mood). This is such a nice and relaxing VR experience. The mini golfing here feels really natural, and the multiplayer experience is terrific. There's a bunch of levels to play and each level has a hidden ball on each hole. It's a fun way to mix up the typical game experience by adding in that little scavenger hunt in the middle of it. 10/10 VR game. This should be one of your first purchases if you're getting into VR gaming.
 19. Forza Horizon 5
-20. Moonscars
-21. PowerWash Simulator
-22. Skul: The Hero Slayer
-23. MultiVerses
-24. House Flipper
-25. Pokemon Scarlet
-26. Castlevania: Aria of Sorrow
-27. Final Fantasy XV
-28. Warhammer 40,000: Darktide
+    - There's no reason for me to enjoy this game so much, but I do. I really really love playing this game. It's not particularly exciting, but the atmosphere and the gorgeous visuals keep me coming back to it. It's a beautiful game with a fun, relaxing atmosphere. It's also made me really want a new Ford Bronco, but I could never bring myself to buy a non-electric car these days, especially since the Bronco only gets like 20 MPG or something crazy low like that. At least I can drive it guilt free here 🙃.
+20. PowerWash Simulator
+    -  This game is dumb. There's no reason for this to be as much fun as it is. Why do I enjoy doing chores in a video game? Make it make sense.
+21. Skul: The Hero Slayer
+    -  I haven't gotten to play much of this game yet, but what I have played has been a blast. It doesn't take itself too seriously and the combat is solid. It feels hard, but fair. I should really play more of it.
+22. MultiVerses
+    -  This has been hit and miss with me. Every time a new platform fighter (read: Smash clone) hits the digital shelves, it's plastered all over YouTube with clickbait thumbnails that say something like _SMASH KILLER?!?!_. No. It's not Smash. Nothing will ever be Smash. Super Smash Bros will always be the best in its class. Full stop. Having said that, there is some fun to be had in this game. Like any other fighting game, it takes awhile to find _your_ character: the one that feels best to you. Since it's free-to-play, there's a lot of BS to overcome if you want to unlock characters.
+23. Pokemon Scarlet
+    -  I hate that I like this garbage game as much as I do. GameFreak knows they just have to appeal to my childhood and they'll win another sale. This game is ugly. It runs like complete ass in molasses, but I couldn't put it down. I played through the entire thing. I can't tell you why. Maybe something about collect-a-thons really gets me going? I can't tell. Gotta catch 'em all, I suppose.
+24. Castlevania: Aria of Sorrow
+    -  The Castlevania games on the Game Boy Advance are the best Castlevania games, in my opinion. Aria of Sorrow is regarded as being the best of those. I can't decide, myself. They're all so terrific in their own way. I enjoy mixing up the weaponry in this one though, plus the music is fantastic. I haven't finished it yet, but it's on my to-do list.
+25. Final Fantasy XV
+    -  I only recently started playing this one, and then I got sick, so I haven't played it since. I have maybe 3-4 hours in it. It looks absolutely gorgeous, but I can't help but feel out of place with this Final Fantasy. I don't know if it's because it's more hack-and-slash than turn based, but something is just throwing me for a loop in this game. I enjoy it, but it doesn't quite feel _Final Fantasy_ to me.
+26. Warhammer 40,000: Darktide
+    -  This game is just dumb fun. If you like excessive blood and gore and such, then this is the game for you. It's like if Kill Bill met Lord of the Rings. It's ridiculous in ever aspect, and it's unabashedly gothic. Great multiplayer experience. Just hope that you don't run into any "infinite hoard" glitches like me and my buddies ran into one night. It was hilarious, but, man, I hated losing all of that gold and exp lol.
+27. Kirby and the Forgotten Land
+    -  This is definitely my wife's game of the year. We played through the entire game together, and it was so much fun. The multiplayer leaves a bit to be desired since, you'll just get teleported to Kirby at random, it seems. If you can get passed that, or if you're just going to play this single player, I can't recommend it enough. This is the best Kirby game yet.
 
 
 What were some of the games you played this year? Let me know in the comments below! Thanks for reading!

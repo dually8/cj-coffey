@@ -14,7 +14,7 @@
 3. Run
    1. `npm run start:dev` to run with drafts enabled
    2. `npm run start` to run with drafts disabled
-   3. `npm run clean-public` to clear the `/public` directory
+   3. `npm run clear-public` to clear the `/public` directory
    4. `npm run build` to build the `/public` directory
 
 ## New Posts
