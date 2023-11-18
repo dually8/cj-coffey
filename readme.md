@@ -3,6 +3,8 @@
 ## Getting Started
 
 1. Install [hugo-extended](https://gohugo.io/getting-started/installing)
+    - REQUIRES VERSION 0.119.0! Install via winget
+    - `winget install --id Hugo.Hugo.Extended -s winget -e -v 0.119.0`
 2. Run `hugo server` to start the dev server
    1. You can add the `-D` argument to show drafts
 3. Run `hugo` to build the site to the `/public` directory.
