@@ -34,3 +34,5 @@ draft: true
 28. Starfield
 29. Dark Cloud (PS2)
 30. Megaman Legends (PSX)
+31. Risk of Rain Returns
+32. Persona 5 Tactica
