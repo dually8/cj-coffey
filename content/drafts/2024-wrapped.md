@@ -20,10 +20,18 @@ draft: true
   - TODO
 - Make Way (8/10)
   - TODO
+- Legend of Mana (???)
+  - TODO
 - The Legend of Zelda: Ocarina of Time (10/10)
   - I revisited this one playing the [multiplayer mod](https://github.com/garrettjoecox/OOT/releases/tag/8.0.3-anchor-player-models-4) for it with a friend. It was such a fun time and it hit all of the nostalgia bits in just the right places. This will forever be my comfort game.
 - The Legend of Zelda: Four Swords Adventures (7/10)
   - I played through this online with a few friends, and it's fun, but man is it hectic. So many footguns, but it makes for one hilarious experience.
+- The Legend of Zelda: Echoes of Wisdom (???)
+  - TODO
+- Metaphor: ReFantazio (???)
+  - TODO
+- Palworld (???)
+  - TODO
 - Persona 3 Reload (10/10)
   - TODO: Finish this one
 - Persona 5 Tactica (8/10)
@@ -32,25 +40,35 @@ draft: true
   - TODO
 - Resident Evil 6 (6/10)
   - TODO
+- Resident Evil Revelations 2 (???)
+  - TODO
 - Risk of Rain 2 DLC (7/10)
   - TODO
 - Roboquest (7/10)
   - TODO
 - Shin Megami Tensei V: Vengence (?/10)
   - TODO: Finish this one
+- Super Mario RPG (Switch) (???)
+  - TODO
 - Tekken 8 (10/10)
   - TODO
 - Vampire Survivors (9/10)
+  - TODO -- Mention castlevania DLC
+- Warhammer 40,000: Space Marine 2 (???)
   - TODO
 
 ## Anime
 
+- 365 Days To The Wedding (???)
+  - TODO: Finish it
 - A Condition Called Love (6/10)
   - TODO
 - A Sign of Affection (10/10)
   - This one was my favorite Shojo show of the year. It's way too cute, and I love the fact they paid super close attention to the sign language bits. It's fun to learn a little something while watching a show you like.
 - Alya Sometimes Hides Her Feelings in Russian (7/10)
   - TODO: Finish this one
+- Delicious in Dungeon
+  - TODO: Finish it
 - Frieren: Beyond Journey's End (10/10)
   - This one was my favorite overall this year. Granted, it started last year, I didn't get around to watching it til early this year. I love the fantasy setting, the romance undertones, the characters are 10/10, etc. Everything about it is top tier. Well done everyone involved in this ^.^
 - Grandpa and Grandma Turn Young Again (7/10)
@@ -59,6 +77,8 @@ draft: true
   - TODO: Finish this one
 - How Heavy are the Dumbbells you Lift? (6/10)
   - This one is a bit _too_ anime, if you catch my drift, but it has some useful working out tips sprinkled in and it has its funny moments.
+- Makeine (???)
+  - TODO
 - Metallic Rouge (7/10)
   - I'm a sucker for anything that deals with the whole "what does it mean to be human" question. Stuff like Blade Runner, NieR, etc. This is right up there with those questions and it has some good action scenes too.
 - My Deer Friend Nokotan (8/10)
@@ -67,6 +87,8 @@ draft: true
   - TODO: Finish this one
 - Nisekoi (2/10)
   - I couldn't finish it. It was just not for me.
+- Raven of the Inner Palace (???)
+  - TODO
 - Skip and Loafer (8/10)
   - I'm curious to see where this goes next season (hopefully there's a season 2 🤞). It's really cute, and I love the relationship that blossoms between the two main characters.
 - Snow White with the Red Hair (?/10)
