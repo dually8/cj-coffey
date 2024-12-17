@@ -42,6 +42,8 @@ const shouldLoad = !Astro.url.origin.includes('localhost');
       </sect>
     </noscript>
   ) || (
-    <p>Comments are disabled on localhost</p>
+    <section>
+      <p>Comments are disabled on localhost</p>
+    </section>
   )
 }

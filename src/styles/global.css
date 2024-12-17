@@ -39,19 +39,11 @@ a.active {
 
 @media (min-width: 1024px) {
   .giscus {
-    max-width: 950px;
+    max-width: 768px;
   }
-}
-
-@media (min-width: 1280px) {
-  .giscus {
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .giscus {
-    max-width: 1450px;
+  .container {
+    /* override wider container */
+    max-width: 768px !important;
   }
 }
 
