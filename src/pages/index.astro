@@ -27,6 +27,13 @@ const lastThreePosts = (await getCollection('blog'))
     gap: 1rem;
     margin-top: 2rem;
   }
+
+  .lastest-posts a {
+    text-decoration: none;
+  }
+  .lastest-posts a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <html lang="en">
@@ -47,7 +54,8 @@ const lastThreePosts = (await getCollection('blog'))
         <h1>{SITE_TITLE}</h1>
         <p>{SITE_DESCRIPTION}</p>
       </section>
-      <section class="grid">
+      <section class="lastest-posts">
+        <h2>Latest Posts</h2>
         {
           lastThreePosts.map((post) => (
             <a href={`/posts/${post.id}/`}>
