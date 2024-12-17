@@ -1,0 +1,16 @@
+---
+interface Props {
+  content: string;
+}
+
+const { content } = Astro.props;
+const words = content?.split(/\s+/).length ?? 0;
+const wordsPerMinute = 200;
+const minutes = Math.ceil(words / wordsPerMinute);
+---
+<style>
+  .reading-time {
+    margin: 0.5rem 0rem;
+  }
+</style>
+<p class="reading-time">{minutes} min · {words} words</p>

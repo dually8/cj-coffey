@@ -1,0 +1,60 @@
+a.active {
+  font-weight: bold;
+  color: var(--pico-contrast);
+}
+
+[data-theme='light'],
+[data-theme='dark'] {
+  --pico-card-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0;
+  border: var(--pico-border-width) solid var(--pico-primary-border);
+  background-color: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-radius: var(--pico-border-radius);
+  padding: 2px 4px;
+  font-size: medium;
+}
+
+@media (min-width: 576px) {
+  .giscus {
+    max-width: 510px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .giscus {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .giscus {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .giscus {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .giscus {
+    max-width: 1450px;
+  }
+}
+
+.giscus {
+  margin: 0 auto;
+}

@@ -1,0 +1,96 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PostSubtitle from '../../components/PostSubtitle.astro';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<script>
+  function filterPosts() {
+    const searchInput = document.querySelector('input[name="search-posts"]') as HTMLInputElement;
+    const articles = document.querySelectorAll('article');
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+      articles.forEach((article) => {
+        const title = article.querySelector('h2')?.textContent?.toLowerCase().trim() || '';
+        const tags = Array.from(article.querySelectorAll('footer p')).map(
+          (tag) => tag.textContent?.toLowerCase().trim() || '',
+        );
+
+        const isMatch = title.includes(searchTerm) || tags.some((tag) => tag.includes(searchTerm));
+
+        const parentLink = article.parentElement as HTMLElement;
+        if (parentLink) {
+          parentLink.style.display = isMatch ? 'block' : 'none';
+        }
+      });
+    });
+  }
+
+  // Initialize search functionality when DOM is loaded
+  document.addEventListener('DOMContentLoaded', filterPosts);
+</script>
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="container">
+      <input
+        type="search"
+        name="search-posts"
+        placeholder="Search"
+        aria-label="Search posts by title and tags"
+      />
+      {
+        posts
+          .filter((p) => !p.data.draft)
+          .map((post) => (
+            <a href={`/posts/${post.id}/`}>
+              <article>
+                <header>
+                  <h2>{post.data.title}</h2>
+                  <p>
+                    <FormattedDate date={post.data.date} />
+                  </p>
+                </header>
+                {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
+                {post.data?.tags?.length > 0 ? (
+                  <footer>
+                    {post.data.tags.map((t) => (
+                      <p class="badge">{t}</p>
+                    ))}
+                  </footer>
+                ) : null}
+              </article>
+            </a>
+          ))
+      }
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .container > a {
+    text-decoration: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow: hidden;
+  }
+</style>

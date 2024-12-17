@@ -1,32 +1,22 @@
 {
-  "name": "cj-hugo-site",
-  "version": "1.0.0",
-  "description": "personal blog",
-  "main": "index.js",
+  "name": "cj-new-astro-blog",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "prebuild": "npm run clear-public",
-    "build": "hugo",
-    "clear-public": "rimraf ./public",
-    "start": "hugo server",
-    "start:dev": "hugo server -D"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dually8/cj-coffey.git"
-  },
-  "keywords": [
-    "blog"
-  ],
-  "author": "dually8",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dually8/cj-coffey/issues"
-  },
-  "homepage": "https://github.com/dually8/cj-coffey#readme",
   "dependencies": {
-    "rimraf": "^3.0.2"
-  },
-  "devDependencies": {
-    "firebase-tools": "^11.14.1"
+    "@astrojs/mdx": "^4.0.2",
+    "@astrojs/rss": "^4.0.10",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/svelte": "^7.0.1",
+    "@picocss/pico": "^2.0.6",
+    "astro": "^5.0.5",
+    "dayjs": "^1.11.13",
+    "svelte": "^5.14.0",
+    "typescript": "^5.7.2"
   }
 }

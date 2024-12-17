@@ -1,54 +1,93 @@
-# My Hugo Site
+# cjcoffey.com
+
+This repository holds the code that is [cjcoffey.com](https://cjcoffey.com). This site is built with Astro v5.
 
 ## Getting Started
 
-1. Install [hugo-extended](https://gohugo.io/getting-started/installing)
-    - REQUIRES VERSION 0.119.0! Install via winget
-    - `winget install --id Hugo.Hugo.Extended -s winget -e -v 0.119.0`
-2. Run `hugo server` to start the dev server
-   1. You can add the `-D` argument to show drafts
-3. Run `hugo` to build the site to the `/public` directory.
+0. Install [NodeJS 20](https://nodejs.org/en/download/package-manager) and [pnpm](https://pnpm.io/)
+1. Clone the repo
+2. Run `pnpm install` to install the dependencies
+3. Run `pnpm run dev` to run the dev server
+4. Run `pnpm run build` to build to the `/dist` folder
+5. Run `pnpm run preview` to run the preview server (serves up the contents of the `/dist` folder)
 
-**Optional**:
+## Resources
 
-1. Install NodeJS
-2. Run `npm ci`
-3. Run
-   1. `npm run start:dev` to run with drafts enabled
-   2. `npm run start` to run with drafts disabled
-   3. `npm run clear-public` to clear the `/public` directory
-   4. `npm run build` to build the `/public` directory
+- [Astro docs](https://docs.astro.build/en/getting-started/)
+- [PicoCSS](https://picocss.com/)
+- [Iconify - Simple Icons](https://icon-sets.iconify.design/simple-icons/)
 
-## New Posts
+<details>
+<summary> Old Astro readme </summary>
 
-- Run `hugo new posts/name-for-post.md` to create a new post file
+# Astro Starter Kit: Blog
 
-## Directory Structure
+```sh
+npm create astro@latest -- --template blog
+```
 
-> From [Directory Structure](https://gohugo.io/getting-started/directory-structure/)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
 
-- `archetypes`
-  - You can create new content files in Hugo using the hugo new command. By default, Hugo will create new content files with at least date, title (inferred from the file name), and draft = true. This saves time and promotes consistency for sites using multiple content types. You can create your own archetypes with custom preconfigured front matter fields as well.
-- `assets`
-    - Stores all the files which need be processed by Hugo Pipes. Only the files whose .Permalink or .RelPermalink are used will be published to the public directory. Note: assets directory is not created by default.
-- `config`
-    - Hugo ships with a large number of configuration directives. The config directory is where those directives are stored as JSON, YAML, or TOML files. Every root setting object can stand as its own file and structured by environments. Projects with minimal settings and no need for environment awareness can use a single config.toml file at its root.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-_Many sites may need little to no configuration, but Hugo ships with a large number of configuration directives for more granular directions on how you want Hugo to build your website. **Note**: config directory is not created by default._
+![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
 
-- `content`
-    - All content for your website will live inside this directory. Each top-level folder in Hugo is considered a content section. For example, if your site has three main sections—blog, articles, and tutorials—you will have three directories at content/blog, content/articles, and content/tutorials. Hugo uses sections to assign default content types.
-- `data`
-    - This directory is used to store configuration files that can be used by Hugo when generating your website. You can write these files in YAML, JSON, or TOML format. In addition to the files you add to this folder, you can also create data templates that pull from dynamic content.
-- `layouts`
-    - Stores templates in the form of .html files that specify how views of your content will be rendered into a static website. Templates include list pages, your homepage, taxonomy templates, partials, single page templates, and more.
-- `static`
-    - Stores all the static content: images, CSS, JavaScript, etc. When Hugo builds your site, all assets inside your static directory are copied over as-is. A good example of using the static folder is for verifying site ownership on Google Search Console, where you want Hugo to copy over a complete HTML file without modifying its content.
+Features:
 
-- `resources`
-    - Caches some files to speed up generation. Can be also used by template authors to distribute built SASS files, so you don’t have to have the preprocessor installed. Note: resources directory is not created by default.
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-## Further Reading
+## 🚀 Project Structure
 
-- [Hugo](https://gohugo.io/getting-started/quick-start/)
-- [Directory Structure](https://gohugo.io/getting-started/directory-structure/)
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+
+</details>

@@ -1,0 +1,63 @@
+---
+import MoonIcon from '../assets/Moon.svg';
+import SunIcon from '../assets/Sun.svg';
+---
+
+<style>
+  #themeToggle {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .lucide-moon {
+    display: none;
+  }
+  .lucide-sun {
+    display: inline;
+  }
+
+  :global([data-theme='dark']) .lucide-sun {
+    display: none;
+  }
+  :global([data-theme='dark']) .lucide-moon {
+    display: inline;
+  }
+</style>
+
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme') ?? 'light';
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  window.localStorage.setItem('theme', theme);
+
+  // Timeout so it has time to load in
+  setTimeout(() => {
+    const handleToggleClick = () => {
+      const element = document.documentElement;
+      const isDark = element.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      element.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    };
+
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle?.addEventListener('click', handleToggleClick);
+  }, 500);
+</script>
+
+<button id="themeToggle" aria-label="Toggle light and dark mode">
+  <MoonIcon />
+  <SunIcon />
+</button>

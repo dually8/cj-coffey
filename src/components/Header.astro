@@ -1,0 +1,39 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+import LightDarkToggle from './LightDarkToggle.astro';
+import RssIcon from '../assets/Rss.svg';
+---
+
+<style>
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  nav li {
+    display: flex;
+    align-items: center;
+  }
+
+  nav li :where(a, [role='link']) {
+    display: inline-flex;
+    align-self: center;
+  }
+</style>
+
+<header>
+  <nav>
+    <ul>
+      <li>
+        <h2><a href="/">{SITE_TITLE}</a></h2>
+      </li>
+    </ul>
+    <ul>
+      <li><HeaderLink href="/">Home</HeaderLink></li>
+      <li><HeaderLink href="/posts">Archive</HeaderLink></li>
+      <li>
+        <LightDarkToggle />
+      </li>
+    </ul>
+  </nav>
+</header>

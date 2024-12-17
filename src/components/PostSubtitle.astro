@@ -1,0 +1,20 @@
+---
+import { getInitialWordSnippet } from '../utils/word-utils.ts';
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+
+const first50Words = getInitialWordSnippet(text);
+---
+
+<p>{first50Words}</p>
+
+<style>
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+</style>
