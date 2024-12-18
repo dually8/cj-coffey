@@ -47,6 +47,7 @@ const lastThreePosts = (await getCollection('blog'))
         <Image
           src={Avatar}
           alt="Avatar"
+          loading="eager"
         />
         <h1>{SITE_TITLE}</h1>
         <p>{SITE_DESCRIPTION}</p>

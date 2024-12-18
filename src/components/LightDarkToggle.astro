@@ -24,26 +24,28 @@ import SunIcon from '../assets/Sun.svg';
 </style>
 
 <script is:inline>
-  const theme = (() => {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-      return localStorage.getItem('theme') ?? 'light';
-    }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    return 'light';
-  })();
+  function applyTheme() {
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme') ?? 'light';
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      return 'light';
+    })();
 
-  if (theme === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'dark');
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    window.localStorage.setItem('theme', theme);
   }
-
-  window.localStorage.setItem('theme', theme);
-
-  // Timeout so it has time to load in
-  setTimeout(() => {
+  document.addEventListener('astro:after-swap', applyTheme);
+  applyTheme();
+  document.addEventListener('astro:page-load', () => {
     const handleToggleClick = () => {
       const element = document.documentElement;
       const isDark = element.getAttribute('data-theme') === 'dark';
@@ -54,10 +56,12 @@ import SunIcon from '../assets/Sun.svg';
 
     const themeToggle = document.getElementById('themeToggle');
     themeToggle?.addEventListener('click', handleToggleClick);
-  }, 500);
+  });
 </script>
 
-<button id="themeToggle" aria-label="Toggle light and dark mode">
+<button
+  id="themeToggle"
+  aria-label="Toggle light and dark mode">
   <MoonIcon />
   <SunIcon />
 </button>
