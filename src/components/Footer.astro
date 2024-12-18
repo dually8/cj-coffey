@@ -1,0 +1,42 @@
+---
+import GitHubIcon from '../assets/GitHub.svg';
+import RssIcon from '../assets/Rss.svg';
+import BlueSkyIcon from '../assets/BlueSky.svg';
+
+const today = new Date();
+---
+
+<style>
+  .align-center {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 1rem;
+  }
+</style>
+
+<footer>
+  <section class="align-center">
+    <p>
+      &copy; {today.getFullYear()} CJ Coffey. All rights reserved.
+    </p>
+    <!-- Link to github -->
+    <a
+      href="https://github.com/dually8"
+      target="_blank"
+      aria-label="CJ's GitHub Profile">
+      <GitHubIcon />
+    </a>
+    <a
+      href="https://bsky.app/profile/cjcoffey.com"
+      target="_blank"
+      aria-label="CJ's BlueSky Profile">
+      <BlueSkyIcon />
+    </a>
+    <a
+      href="/rss.xml"
+      aria-label="RSS Feed">
+      <RssIcon />
+    </a>
+  </section>
+</footer>

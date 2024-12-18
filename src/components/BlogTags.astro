@@ -1,0 +1,17 @@
+---
+interface Props {
+  tags: string[];
+}
+const { tags } = Astro.props;
+---
+
+<style>
+  .blog-tags {
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+</style>
+
+<div class="blog-tags">
+  {tags.map((t) => <p class="badge">{t}</p>)}
+</div>

@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="container">
+      <h1>Links</h1>
+      <p>Various social links and gamer links</p>
+      <ul>
+        <li>Battle.net: dually8#1592</li>
+        <li>Discord: dually8#7979</li>
+        <li>Epic Games: dually888</li>
+        <li>Origin: dually888@yahoo.com</li>
+        <li>PSN: dually888</li>
+        <li>Steam: https://steamcommunity.com/id/pancakesomnom</li>
+        <li>Switch: SW-3007-4132-9439</li>
+        <li>Twitch: https://twitch.tv/dually8</li>
+        <li>UPlay: dually8</li>
+        <li>Xbox: dually8</li>
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>

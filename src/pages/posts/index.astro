@@ -1,0 +1,110 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PostSubtitle from '../../components/PostSubtitle.astro';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<script>
+  function filterPosts() {
+    const searchInput = document.querySelector('input[name="search-posts"]') as HTMLInputElement;
+    const articles = document.querySelectorAll('article');
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+      articles.forEach((article) => {
+        const title = article.querySelector('h2')?.textContent?.toLowerCase().trim() || '';
+        const tags = Array.from(article.querySelectorAll('.tags p')).map(
+          (tag) => tag.textContent?.toLowerCase().trim() || '',
+        );
+
+        const isMatch = title.includes(searchTerm) || tags.some((tag) => tag.includes(searchTerm));
+
+        const parentLink = article.parentElement as HTMLElement;
+        if (parentLink) {
+          parentLink.style.display = isMatch ? 'block' : 'none';
+        }
+      });
+    });
+  }
+  document.addEventListener('astro:page-load', () => {
+    filterPosts();
+  });
+</script>
+
+<style>
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  header > * {
+    margin-bottom: 0.25rem;
+  }
+</style>
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="container">
+      <input
+        type="search"
+        name="search-posts"
+        placeholder="Search"
+        aria-label="Search posts by title and tags"
+        class="fadeInDown"
+      />
+      {
+        posts
+          .filter((p) => !p.data.draft)
+          .map((post) => (
+            <a
+              href={`/posts/${post.id}/`}
+              class="fadeIn">
+              <article class="post-card">
+                <header>
+                  <h2>{post.data.title}</h2>
+                  <p>
+                    <FormattedDate date={post.data.date} />
+                  </p>
+                  {post.data.tags?.length && (
+                    <div class="tags">
+                      {post.data.tags?.map((t) => (
+                        <p class="badge">{t}</p>
+                      ))}
+                    </div>
+                  )}
+                </header>
+                {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
+              </article>
+            </a>
+          ))
+      }
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .container > a {
+    text-decoration: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow: hidden;
+  }
+</style>
