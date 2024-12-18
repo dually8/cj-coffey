@@ -33,9 +33,9 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
       });
     });
   }
-
-  // Initialize search functionality when DOM is loaded
-  document.addEventListener('DOMContentLoaded', filterPosts);
+  document.addEventListener('astro:page-load', () => {
+    filterPosts();
+  });
 </script>
 
 <style>
