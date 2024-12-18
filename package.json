@@ -3,16 +3,20 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "clean": "rimraf ./dist ./.astro",
     "dev": "astro dev",
     "build": "astro build",
     "preview:nobuild": "astro preview",
     "preview": "astro build && astro preview",
     "astro": "astro",
+    "astro:check": "astro check",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "precommit": "npm run clean && npm run astro:check && npm run test:e2e && npm run build"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.0.2",
     "@astrojs/rss": "^4.0.10",
     "@astrojs/sitemap": "^3.2.1",
@@ -25,6 +29,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.2"
+    "@types/node": "^22.10.2",
+    "rimraf": "^6.0.1"
   }
 }
