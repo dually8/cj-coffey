@@ -13,10 +13,7 @@ export default defineConfig({
   prefetch: true,
   markdown: {
     shikiConfig: {
-      themes: {
-        light: 'github-light',
-        dark: 'dracula',
-      },
+      theme: 'dracula-soft',
       wrap: true,
     }
   },
