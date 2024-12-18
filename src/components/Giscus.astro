@@ -17,6 +17,7 @@ const shouldLoad = !Astro.url.origin.includes('localhost');
 {
   shouldLoad && (
     <script
+      is:inline
       src="https://giscus.app/client.js"
       data-repo="dually8/cj-coffey"
       data-repo-id="R_kgDOH2oS3A"
