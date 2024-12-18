@@ -16,8 +16,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description, image = '/img/avatar.png' } = Astro.props;
 ---
 
-<ClientRouter />
-
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -48,3 +46,5 @@ const { title, description, image = '/img/avatar.png' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<ClientRouter />
