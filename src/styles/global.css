@@ -3,10 +3,9 @@ a.active {
   color: var(--pico-contrast);
 }
 
-[data-theme='light'],
-[data-theme='dark'] {
-  --pico-card-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+[data-theme="light"],
+[data-theme="dark"] {
+  --pico-card-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.08) !important;
 }
 
 .badge {
@@ -50,3 +49,69 @@ a.active {
 .giscus {
   margin: 0 auto;
 }
+
+a:has(.post-card):hover {
+  text-decoration: none;
+}
+
+/* Animations */
+.post-card {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color */
+    /* from starting_color variables r_value g_value b_value [/ optional_alpha] */
+    box-shadow: 0px 3px 5px 2px color(from var(--pico-color) xyz x y z / 0.08);
+  }
+}
+
+/* https://github.com/animate-css/animate.css/blob/main/source/fading_entrances/fadeIn.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* https://github.com/animate-css/animate.css/blob/main/source/fading_entrances/fadeInDown.css */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-card {
+    transition: none !important;
+  }
+  .fadeInDown {
+    animation-name: none !important;
+  }
+  .fadeIn {
+    animation-name: none !important;
+  }
+}
+
+/* End Animations */

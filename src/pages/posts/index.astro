@@ -20,7 +20,7 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
 
       articles.forEach((article) => {
         const title = article.querySelector('h2')?.textContent?.toLowerCase().trim() || '';
-        const tags = Array.from(article.querySelectorAll('footer p')).map(
+        const tags = Array.from(article.querySelectorAll('.tags p')).map(
           (tag) => tag.textContent?.toLowerCase().trim() || '',
         );
 
@@ -38,6 +38,17 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
   document.addEventListener('DOMContentLoaded', filterPosts);
 </script>
 
+<style>
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  header > * {
+    margin-bottom: 0.25rem;
+  }
+</style>
+
 <html lang="en">
   <head>
     <BaseHead
@@ -53,27 +64,30 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
         name="search-posts"
         placeholder="Search"
         aria-label="Search posts by title and tags"
+        class="fadeInDown"
       />
       {
         posts
           .filter((p) => !p.data.draft)
           .map((post) => (
-            <a href={`/posts/${post.id}/`}>
-              <article>
+            <a
+              href={`/posts/${post.id}/`}
+              class="fadeIn">
+              <article class="post-card">
                 <header>
                   <h2>{post.data.title}</h2>
                   <p>
                     <FormattedDate date={post.data.date} />
                   </p>
+                  {post.data.tags?.length && (
+                    <div class="tags">
+                      {post.data.tags?.map((t) => (
+                        <p class="badge">{t}</p>
+                      ))}
+                    </div>
+                  )}
                 </header>
                 {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
-                {post.data?.tags?.length > 0 ? (
-                  <footer>
-                    {post.data.tags.map((t) => (
-                      <p class="badge">{t}</p>
-                    ))}
-                  </footer>
-                ) : null}
               </article>
             </a>
           ))

@@ -31,9 +31,6 @@ const lastThreePosts = (await getCollection('blog'))
   .lastest-posts a {
     text-decoration: none;
   }
-  .lastest-posts a:hover {
-    text-decoration: underline;
-  }
 </style>
 
 <html lang="en">
@@ -46,7 +43,7 @@ const lastThreePosts = (await getCollection('blog'))
   <body>
     <Header />
     <main class="container">
-      <section class="hero">
+      <section class="hero fadeInDown">
         <Image
           src={Avatar}
           alt="Avatar"
@@ -54,12 +51,12 @@ const lastThreePosts = (await getCollection('blog'))
         <h1>{SITE_TITLE}</h1>
         <p>{SITE_DESCRIPTION}</p>
       </section>
-      <section class="lastest-posts">
+      <section class="lastest-posts fadeIn">
         <h2>Latest Posts</h2>
         {
           lastThreePosts.map((post) => (
             <a href={`/posts/${post.id}/`}>
-              <article>
+              <article class="post-card">
                 <h2>{post.data.title}</h2>
                 <FormattedDate date={post.data.date} />
                 {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}

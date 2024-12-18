@@ -16,6 +16,8 @@ This repository holds the code that is [cjcoffey.com](https://cjcoffey.com). Thi
 - [Astro docs](https://docs.astro.build/en/getting-started/)
 - [PicoCSS](https://picocss.com/)
 - [Iconify - Simple Icons](https://icon-sets.iconify.design/simple-icons/)
+- [Box Shadow Generator](https://web-toolbox.dev/en/tools/box-shadow-generator)
+- [Animate.css](https://github.com/animate-css/animate.css/tree/main)
 
 <details>
 <summary> Old Astro readme </summary>
