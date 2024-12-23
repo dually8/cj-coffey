@@ -14,31 +14,33 @@ const lastThreePosts = (await getCollection('blog'))
   .slice(0, 3);
 ---
 
-<style>
-  img[alt='Avatar'] {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-  }
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .lastest-posts a {
-    text-decoration: none;
-  }
-</style>
-
 <html lang="en">
   <head>
     <BaseHead
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
     />
+    <style>
+      .grid > a {
+        text-decoration: none;
+      }
+      img[alt='Avatar'] {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .lastest-posts a {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <Header />
@@ -70,9 +72,3 @@ const lastThreePosts = (await getCollection('blog'))
     <Footer />
   </body>
 </html>
-
-<style>
-  .grid > a {
-    text-decoration: none;
-  }
-</style>

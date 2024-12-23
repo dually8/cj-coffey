@@ -5,19 +5,18 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<style>
-  ul,
-  li {
-    margin: 0.125rem;
-  }
-</style>
-
 <html lang="en">
   <head>
     <BaseHead
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
     />
+    <style>
+      ul,
+      li {
+        margin: 0.125rem;
+      }
+    </style>
   </head>
   <body>
     <Header />

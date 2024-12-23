@@ -10,56 +10,63 @@ import PostSubtitle from '../../components/PostSubtitle.astro';
 const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<script>
-  function filterPosts() {
-    const searchInput = document.querySelector('input[name="search-posts"]') as HTMLInputElement;
-    const articles = document.querySelectorAll('article');
-    if (!searchInput) {
-      console.log('searchInput not found');
-      // Keep trying until the search input is found
-      setTimeout(filterPosts, 100);
-      return;
-    }
-
-    searchInput.oninput = (e: Event) => {
-      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase().trim();
-
-      articles.forEach((article) => {
-        const title = article.querySelector('h2')?.textContent?.toLowerCase().trim() || '';
-        const tags = Array.from(article.querySelectorAll('.tags p')).map(
-          (tag) => tag.textContent?.toLowerCase().trim() || '',
-        );
-
-        const isMatch = title.includes(searchTerm) || tags.some((tag) => tag.includes(searchTerm));
-
-        const parentLink = article.parentElement as HTMLElement;
-        if (parentLink) {
-          parentLink.style.display = isMatch ? 'block' : 'none';
-        }
-      });
-    };
-  }
-  // Sometimes, a setTimeout is all you need to make things work 😆
-  setTimeout(filterPosts, 100);
-</script>
-
-<style>
-  .tags {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  header > * {
-    margin-bottom: 0.25rem;
-  }
-</style>
-
 <html lang="en">
   <head>
     <BaseHead
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
     />
+    <script>
+      function filterPosts() {
+        const searchInput = document.querySelector('input[name="search-posts"]') as HTMLInputElement;
+        const articles = document.querySelectorAll('article');
+        if (!searchInput) {
+          console.log('searchInput not found');
+          // Keep trying until the search input is found
+          setTimeout(filterPosts, 100);
+          return;
+        }
+
+        searchInput.oninput = (e: Event) => {
+          const searchTerm = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+          articles.forEach((article) => {
+            const title = article.querySelector('h2')?.textContent?.toLowerCase().trim() || '';
+            const tags = Array.from(article.querySelectorAll('.tags p')).map(
+              (tag) => tag.textContent?.toLowerCase().trim() || '',
+            );
+
+            const isMatch = title.includes(searchTerm) || tags.some((tag) => tag.includes(searchTerm));
+
+            const parentLink = article.parentElement as HTMLElement;
+            if (parentLink) {
+              parentLink.style.display = isMatch ? 'block' : 'none';
+            }
+          });
+        };
+      }
+      // Sometimes, a setTimeout is all you need to make things work 😆
+      setTimeout(filterPosts, 100);
+    </script>
+    <style>
+      .tags {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      header > * {
+        margin-bottom: 0.25rem;
+      }
+      .container > a {
+        text-decoration: none;
+      }
+      footer {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <Header />
@@ -101,15 +108,3 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
     <Footer />
   </body>
 </html>
-
-<style>
-  .container > a {
-    text-decoration: none;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    overflow: hidden;
-  }
-</style>
