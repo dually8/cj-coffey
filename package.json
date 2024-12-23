@@ -13,7 +13,8 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:report": "playwright show-report",
-    "precommit": "npm run clean && npm run astro:check && npm run test:e2e && npm run build"
+    "precommit": "npm run clean && npm run astro:check && npm run test:e2e && npm run build",
+    "generate-images": "tsx ./scripts/generate-apple-icons.ts ./public/img/avatar.png ./public/img/"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
