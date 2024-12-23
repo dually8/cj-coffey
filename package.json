@@ -30,6 +30,8 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.2",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.2"
   }
 }
