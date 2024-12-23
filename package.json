@@ -13,16 +13,17 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:report": "playwright show-report",
-    "precommit": "npm run clean && npm run astro:check && npm run test:e2e && npm run build"
+    "precommit": "npm run clean && npm run astro:check && npm run test:e2e && npm run build",
+    "generate-images": "tsx ./scripts/generate-apple-icons.ts ./public/img/avatar.png ./public/img/"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.0.2",
+    "@astrojs/mdx": "^4.0.3",
     "@astrojs/rss": "^4.0.10",
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/svelte": "^7.0.1",
+    "@astrojs/svelte": "^7.0.2",
     "@picocss/pico": "^2.0.6",
-    "astro": "^5.0.5",
+    "astro": "^5.1.1",
     "dayjs": "^1.11.13",
     "svelte": "^5.14.0",
     "typescript": "^5.7.2"
@@ -30,6 +31,8 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.2",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.2"
   }
 }

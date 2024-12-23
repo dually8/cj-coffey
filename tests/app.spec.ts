@@ -13,5 +13,6 @@ test('test', async ({ page }) => {
   await expect(page.getByPlaceholder('Search')).toBeVisible();
   await page.getByPlaceholder('Search').click();
   await page.getByPlaceholder('Search').fill('devlog');
-  await expect(page.locator('a').filter({ hasText: 'Dev Log Series Part 3 2023-11' })).toBeVisible();
+  await expect(page.locator('h2').filter({ hasText: 'Dev Log Series Part 3' })).toBeVisible();
+  await expect(page.locator('h2').filter({ hasText: 'FIRST' })).not.toBeVisible();
 });
