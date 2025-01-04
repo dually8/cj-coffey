@@ -20,9 +20,9 @@ export function getInitialWordSnippet(text: string, wordCount = 50): string {
 
   // Replace Markdown syntax with an empty string
   const cleanedText = text
-  .replace(markdownRegex, ' ')
-  .replace(newlineAndTabRegex, ' ')
-  .replace(multipleSpacesRegex, ' ');
+    .replace(markdownRegex, ' ')
+    .replace(newlineAndTabRegex, ' ')
+    .replace(multipleSpacesRegex, ' ');
 
   return cleanedText.split(' ').slice(0, wordCount).join(' ').trim() + '...';
 }
