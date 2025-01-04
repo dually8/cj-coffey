@@ -4,7 +4,7 @@ This repository holds the code that is [cjcoffey.com](https://cjcoffey.com). Thi
 
 ## Getting Started
 
-0. Install [NodeJS 20](https://nodejs.org/en/download/package-manager)
+0. Install the LTS version of [NodeJS](https://nodejs.org/en/download/package-manager)
 1. Clone the repo
 2. Run `npm install` to install the dependencies
 3. Run `npm run dev` to run the dev server
