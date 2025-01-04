@@ -12,6 +12,8 @@ I played a lot of different games, but finished almost none of them lol. I manag
 
 Welcome to the third annual "things I did this year" post. I'm a bit late getting it out, but I hope you enjoy it regardless. As I did last year, I'll **bold** the things I particularly enjoyed.
 
+## Table of Contents
+
 ## Games
 
 - **Astro Bot (10/10)**
