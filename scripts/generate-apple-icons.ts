@@ -7,6 +7,11 @@ const ICON_SIZES = [
   { size: 167, name: 'apple-touch-icon-167x167.png' }, // iPad Retina
   { size: 152, name: 'apple-touch-icon-152x152.png' }, // iPad
   { size: 120, name: 'apple-touch-icon-120x120.png' }, // iPhone
+  // Precompose icons
+  { size: 180, name: 'apple-touch-icon-precomposed.png' }, // iPhone Retina
+  { size: 167, name: 'apple-touch-icon-167x167-precomposed.png' }, // iPad Retina
+  { size: 152, name: 'apple-touch-icon-152x152-precomposed.png' }, // iPad
+  { size: 120, name: 'apple-touch-icon-120x120-precomposed.png' }, // iPhone
 ];
 
 async function generateImages(imagePath: string, outputDir: string) {
