@@ -5,10 +5,10 @@
   "scripts": {
     "clean": "rimraf ./dist ./.astro",
     "predev": "npm run clean",
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
-    "preview:nobuild": "astro preview",
-    "preview": "astro build && astro preview",
+    "preview:nobuild": "astro preview --host",
+    "preview": "astro build && astro preview --host",
     "astro": "astro",
     "astro:check": "astro check",
     "test:e2e": "playwright test",
