@@ -1,6 +1,7 @@
 ---
 title: "My Astro Experience"
 date: 2025-03-28
+tags: ["Astro", "Hugo", "Hexo", "Web Dev"]
 draft: false
 ---
 

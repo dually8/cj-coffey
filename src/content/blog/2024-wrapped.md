@@ -2,6 +2,7 @@
 title: "2024 Wrapped"
 date: 2025-01-05
 draft: false
+tags: ["video games", "anime", "manga", "life"]
 ---
 
 ## TLDR

@@ -2,6 +2,7 @@
 title: "New Stuff I Want To Talk About"
 date: 2024-05-18
 draft: false
+tags: ["JavaScript", "TypeScript"]
 ---
 
 Man, life comes at your first, doesn't it? Sorry it's been a minute, but welcome back! In this post, I wanted to talk about a few random things I've stumbled upon and learned about recently. Technology moves fast, and I feel like I was out of the JavaScript bubble just long enough to miss a few key things. I really wish there was some kind of newsletter or something I could read so I can better keep up-to-date with things. Having said all that, let's dive into things.
