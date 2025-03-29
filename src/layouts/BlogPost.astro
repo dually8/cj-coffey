@@ -14,7 +14,7 @@ type FirstWords = { firstWords?: string };
 type Props = PostData & PostContent & FirstWords;
 
 const { data, firstWords, body } = Astro.props;
-const { title, subtitle, date, tags, draft } = data;
+const { title, subtitle, date, tags, draft, updatedDate } = data;
 
 const description = subtitle || firstWords || '';
 ---
@@ -34,6 +34,14 @@ const description = subtitle || firstWords || '';
         <header>
           <h1>{title}</h1>
           <FormattedDate date={date} />
+          {
+            updatedDate && (
+              <span>
+                {' '}
+                Updated: <FormattedDate date={updatedDate} />
+              </span>
+            )
+          }
           <ReadingTime content={body} />
           <div class="tags">
             {tags?.length! > 0 ? <BlogTags tags={tags!} /> : null}

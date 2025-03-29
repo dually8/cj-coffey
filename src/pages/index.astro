@@ -62,6 +62,12 @@ const lastThreePosts = (await getCollection('blog'))
               <article class="post-card">
                 <h2>{post.data.title}</h2>
                 <FormattedDate date={post.data.date} />
+                {post.data.updatedDate && (
+                  <span>
+                    {' '}
+                    Updated: <FormattedDate date={post.data.updatedDate} />
+                  </span>
+                )}
                 {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
               </article>
             </a>

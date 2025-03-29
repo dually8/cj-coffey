@@ -22,6 +22,10 @@ a.active {
   font-size: medium;
 }
 
+time {
+  padding-right: 0.5rem;
+}
+
 @media (min-width: 576px) {
   .giscus {
     max-width: 510px;

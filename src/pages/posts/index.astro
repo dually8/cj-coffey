@@ -90,6 +90,13 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
                   <h2>{post.data.title}</h2>
                   <p>
                     <FormattedDate date={post.data.date} />
+                  {post.data.updatedDate && (
+                    <span>
+                      {' '}
+                      Updated:
+                      <FormattedDate date={post.data.updatedDate} />
+                    </span>
+                  )}
                   </p>
                   {post.data.tags?.length && (
                     <div class="tags">
