@@ -52,6 +52,8 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
       .tags {
         display: flex;
         gap: 0.5rem;
+        overflow: auto;
+        scrollbar-width: none;
       }
 
       header > * {
