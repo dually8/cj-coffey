@@ -20,7 +20,7 @@ export async function GET(context) {
         link: `/posts/${post.id}/`,
         content: sanitized,
         ...post.data,
-      }
+      };
     }),
   });
 }
