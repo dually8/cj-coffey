@@ -21,6 +21,6 @@ export async function GET(context) {
         content: sanitized,
         ...post.data,
       };
-    }),
+    }).sort((a, b) => b.date.getTime() - a.date.getTime()),
   });
 }
