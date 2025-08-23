@@ -145,4 +145,12 @@ const { title, description, image = '/img/avatar.png' } = Astro.props;
   href={new URL('/img/apple-touch-icon-120x120-precomposed.png', Astro.url)}
 />
 
+<!-- RSS -->
+<link
+  rel="alternative"
+  type="application/rss+xml"
+  title="CJ Coffey's Blog"
+  href={new URL('rss.xml', Astro.site)}
+/>
+
 <ClientRouter />
