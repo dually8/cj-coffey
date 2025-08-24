@@ -15,6 +15,7 @@ export async function GET(context: APIContext) {
     description: SITE_DESCRIPTION,
     site: context.site!,
     items: posts
+      .filter(x => !x.data.draft)
       .map((post) => {
         const body = typeof post.body === 'string' ? post.body : '';
         const renderedBody = parser.render(body);
