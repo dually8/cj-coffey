@@ -1,17 +1,19 @@
-import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import rss, { rssSchema } from '@astrojs/rss';
+import type { APIContext } from 'astro';
+import { getCollection, z } from 'astro:content';
 import markdownIt from 'markdown-it';
 import sanitizeHtml from 'sanitize-html';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const parser = new markdownIt();
+type RssFeed = z.infer<typeof rssSchema>;
 
-export async function GET(context) {
+const parser = new markdownIt();
+export async function GET(context: APIContext) {
   const posts = await getCollection('blog');
   return rss({
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    site: context.site,
+    site: context.site!,
     items: posts
       .map((post) => {
         const body = typeof post.body === 'string' ? post.body : '';
@@ -20,11 +22,15 @@ export async function GET(context) {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
         });
         return {
-          link: `/posts/${post.id}/`,
+          author: 'CJ Coffey',
+          categories: post.data.tags,
           content: sanitized,
-          ...post.data,
-        };
+          description: post.data.subtitle,
+          link: `/posts/${post.id}/`,
+          pubDate: post.data.date,
+          title: post.data.title,
+        } as RssFeed;
       })
-      .sort((a, b) => b.date.getTime() - a.date.getTime()),
+      .sort((a, b) => (b.pubDate?.getTime() ?? 0) - (a.pubDate?.getTime() ?? 0)),
   });
 }
