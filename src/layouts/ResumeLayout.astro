@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { frontmatter } = Astro.props;
+
+const title = frontmatter.title || "CJ Coffey's Resume";
+const description = frontmatter.description || 'About me and my experience';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+    />
+    <style>
+      ul,
+      li {
+        margin: 0.125rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+    <main class="container">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
