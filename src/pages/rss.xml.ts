@@ -1,6 +1,7 @@
 import rss, { rssSchema } from '@astrojs/rss';
 import type { APIContext } from 'astro';
-import { getCollection, z } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import markdownIt from 'markdown-it';
 import sanitizeHtml from 'sanitize-html';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';

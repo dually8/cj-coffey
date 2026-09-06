@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import remarkToc from 'remark-toc';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
@@ -19,16 +20,18 @@ export default defineConfig({
   ],
   prefetch: true,
   markdown: {
-    remarkPlugins: [remarkToc],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: 'wrap',
-        },
+    processor: unified({
+      remarkPlugins: [remarkToc],
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'wrap',
+          },
+        ],
       ],
-    ],
+    }),
     shikiConfig: {
       theme: 'dracula-soft',
       wrap: true,
