@@ -5,4 +5,6 @@ interface Props {
 const { tags } = Astro.props;
 ---
 
-{tags.map((t) => <p class="badge">{t}</p>)}
+{tags.map((t) => (
+  <p class="badge">{t}</p>
+))}

@@ -13,6 +13,4 @@ const { date } = Astro.props;
 const blogDate = dayjs.tz(date.toISOString(), 'America/New_York');
 ---
 
-<time datetime={blogDate.toISOString()}>
-  {blogDate.format('YYYY-MM-DD')}
-</time>
+<time datetime={blogDate.toISOString()}>{blogDate.format('YYYY-MM-DD')}</time>

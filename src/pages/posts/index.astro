@@ -73,39 +73,37 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf()
         aria-label="Search posts by title and tags"
         class="fadeInDown"
       />
-      {
-        posts
-          .filter((p) => !p.data.draft)
-          .map((post) => (
-            <a
-              href={`/posts/${post.id}/`}
-              class="fadeIn">
-              <article class="post-card">
-                <header>
-                  <h2>{post.data.title}</h2>
-                  <p>
-                    <FormattedDate date={post.data.date} />
-                    {post.data.updatedDate && (
-                      <span>
-                        {' '}
-                        Updated:
-                        <FormattedDate date={post.data.updatedDate} />
-                      </span>
-                    )}
-                  </p>
-                  {post.data.tags?.length && (
-                    <div class="tags">
-                      {post.data.tags?.map((t) => (
-                        <p class="badge">{t}</p>
-                      ))}
-                    </div>
+      {posts
+        .filter((p) => !p.data.draft)
+        .map((post) => (
+          <a
+            href={`/posts/${post.id}/`}
+            class="fadeIn">
+            <article class="post-card">
+              <header>
+                <h2>{post.data.title}</h2>
+                <p>
+                  <FormattedDate date={post.data.date} />
+                  {post.data.updatedDate && (
+                    <span>
+                      {' '}
+                      Updated:
+                      <FormattedDate date={post.data.updatedDate} />
+                    </span>
                   )}
-                </header>
-                {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
-              </article>
-            </a>
-          ))
-      }
+                </p>
+                {post.data.tags?.length && (
+                  <div class="tags">
+                    {post.data.tags?.map((t) => (
+                      <p class="badge">{t}</p>
+                    ))}
+                  </div>
+                )}
+              </header>
+              {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
+            </article>
+          </a>
+        ))}
     </main>
     <Footer />
   </body>

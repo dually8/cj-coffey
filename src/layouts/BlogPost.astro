@@ -34,18 +34,14 @@ const description = subtitle || firstWords || '';
         <header>
           <h1>{title}</h1>
           <FormattedDate date={date} />
-          {
-            updatedDate && (
-              <span>
-                {' '}
-                Updated: <FormattedDate date={updatedDate} />
-              </span>
-            )
-          }
+          {updatedDate && (
+            <span>
+              {' '}
+              Updated: <FormattedDate date={updatedDate} />
+            </span>
+          )}
           <ReadingTime content={body} />
-          <div class="tags">
-            {tags?.length! > 0 ? <BlogTags tags={tags!} /> : null}
-          </div>
+          <div class="tags">{tags?.length! > 0 ? <BlogTags tags={tags!} /> : null}</div>
         </header>
         <slot />
       </article>

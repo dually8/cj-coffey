@@ -27,12 +27,18 @@ import LightDarkToggle from './LightDarkToggle.astro';
   <nav>
     <ul>
       <li>
-        <h2><a href="/">{SITE_TITLE}</a></h2>
+        <h2>
+          <a href="/">{SITE_TITLE}</a>
+        </h2>
       </li>
     </ul>
     <ul>
-      <li><HeaderLink href="/">Home</HeaderLink></li>
-      <li><HeaderLink href="/posts">Archive</HeaderLink></li>
+      <li>
+        <HeaderLink href="/">Home</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/posts">Archive</HeaderLink>
+      </li>
       <li>
         <LightDarkToggle />
       </li>

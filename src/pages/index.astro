@@ -56,23 +56,21 @@ const lastThreePosts = (await getCollection('blog'))
       </section>
       <section class="lastest-posts fadeIn">
         <h2>Latest Posts</h2>
-        {
-          lastThreePosts.map((post) => (
-            <a href={`/posts/${post.id}/`}>
-              <article class="post-card">
-                <h2>{post.data.title}</h2>
-                <FormattedDate date={post.data.date} />
-                {post.data.updatedDate && (
-                  <span>
-                    {' '}
-                    Updated: <FormattedDate date={post.data.updatedDate} />
-                  </span>
-                )}
-                {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
-              </article>
-            </a>
-          ))
-        }
+        {lastThreePosts.map((post) => (
+          <a href={`/posts/${post.id}/`}>
+            <article class="post-card">
+              <h2>{post.data.title}</h2>
+              <FormattedDate date={post.data.date} />
+              {post.data.updatedDate && (
+                <span>
+                  {' '}
+                  Updated: <FormattedDate date={post.data.updatedDate} />
+                </span>
+              )}
+              {post.data.subtitle ? post.data.subtitle : <PostSubtitle text={post.body!} />}
+            </article>
+          </a>
+        ))}
       </section>
     </main>
     <Footer />
