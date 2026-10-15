@@ -71,7 +71,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'npm run preview',
+    command: 'bun run preview',
     env: { ASTRO_PREVIEW_BACKGROUND: '0' },
     url: 'http://localhost:4321',
     reuseExistingServer: !process.env.CI,
