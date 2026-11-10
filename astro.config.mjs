@@ -4,7 +4,6 @@ import { unified } from '@astrojs/markdown-remark';
 import remarkToc from 'remark-toc';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import svelte from '@astrojs/svelte';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
@@ -16,7 +15,6 @@ export default defineConfig({
     sitemap({
       filter: filterSitemap,
     }),
-    svelte(),
   ],
   prefetch: true,
   markdown: {
