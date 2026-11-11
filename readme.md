@@ -4,12 +4,13 @@ This repository holds the code that is [cjcoffey.com](https://cjcoffey.com). Thi
 
 ## Getting Started
 
-0. Install [Node.js](https://nodejs.org/en/download/package-manager) v22 or newer and [Bun](https://bun.sh/).
-1. Clone the repo
-2. Run `bun install --frozen-lockfile` to install the exact dependencies from `bun.lock`
-3. Run `bun run dev` to run the dev server
-4. Run `bun run build` to build to the `/dist` folder
-5. Run `bun run preview` to build and run the preview server (serves up the contents of the `/dist` folder)
+0. Install [Vite+](https://viteplus.dev/guide/) (`vp`) to manage the project's Node.js and Bun versions.
+1. Clone the repo and enter its directory
+2. Run `vp env install` to install Node.js and Bun
+3. Run `vp install --frozen-lockfile` to install the dependencies
+4. Run `vp run dev` to run the dev server.
+5. Run `vp run build` to build to the `/dist` folder.
+6. Run `vp run preview` to build and run the preview server (serves up the contents of the `/dist` folder).
 
 ### Tip
 
